@@ -58,7 +58,7 @@ def qualify_and_route_lead(data):
         "recommended_action": recommended_action
     }
 
-@app.route("/api/qualify-lead", methods=["POST"])
+@app.route("/api/qualify-lead", methods=["GET", "POST"])
 def handle_lead():
     incoming_data = request.get_json()
 
@@ -74,7 +74,7 @@ def handle_lead():
     }
 
     return jsonify(response_data), 201
-
+'''
 @app.route("/", methods=["GET"])
 def home():
     return {"status": "running"}
@@ -82,7 +82,7 @@ def home():
 @app.route("/test", methods=["GET"])
 def test():
     return {"message": "test works"}
-
+'''
 
 
 import os
