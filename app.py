@@ -96,7 +96,7 @@ def handle_lead():
         "lead_received": incoming_data,
         "qualification": result
     })
-'''
+
 @app.route("/", methods=["GET"])
 def home():
     return {"status": "running"}
@@ -104,7 +104,7 @@ def home():
 @app.route("/test", methods=["GET"])
 def test():
     return {"message": "test works"}
-'''
+
 
 
 import os
