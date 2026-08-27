@@ -75,6 +75,15 @@ def handle_lead():
 
     return jsonify(response_data), 201
 
+@app.route("/", methods=["GET"])
+def home():
+    return {"status": "running"}
+
+@app.route("/test", methods=["GET"])
+def test():
+    return {"message": "test works"}
+
+
 
 import os
 
