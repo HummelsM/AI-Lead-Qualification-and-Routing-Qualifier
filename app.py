@@ -58,7 +58,8 @@ def qualify_and_route_lead(data):
         "recommended_action": recommended_action
     }
 
-@app.route("/api/qualify-lead", methods=["GET", "POST"])
+'''
+@app.route("/api/qualify-lead", methods=["POST"])
 def handle_lead():
     incoming_data = request.get_json()
 
@@ -74,6 +75,27 @@ def handle_lead():
     }
 
     return jsonify(response_data), 201
+
+'''
+
+@app.route("/api/qualify-lead", methods=["GET", "POST"])
+def handle_lead():
+
+    if request.method == "GET":
+        return jsonify({"message": "Endpoint exists"})
+
+    incoming_data = request.get_json()
+
+    if not incoming_data:
+        return jsonify({"error": "Invalid or missing JSON payload"}), 400
+
+    result = qualify_and_route_lead(incoming_data)
+
+    return jsonify({
+        "status": "success",
+        "lead_received": incoming_data,
+        "qualification": result
+    })
 '''
 @app.route("/", methods=["GET"])
 def home():
