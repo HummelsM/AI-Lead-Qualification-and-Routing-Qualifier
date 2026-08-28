@@ -84,10 +84,15 @@ def handle_lead():
     if request.method == "GET":
         return jsonify({"message": "Endpoint exists"})
 
-    incoming_data = request.get_json()
+    incoming_data = request.get_json(silent=True)
+
+    print("RAW JSON RECEIVED:", incoming_data)
 
     if not incoming_data:
-        return jsonify({"error": "Invalid or missing JSON payload"}), 400
+        return jsonify({
+            "error": "Invalid or missing JSON payload",
+            "received": incoming_data
+        }), 400
 
     result = qualify_and_route_lead(incoming_data)
 
