@@ -26,5 +26,6 @@ An automated lead-processing pipeline that collects inbound leads through Google
 ```
 
 # Architecture
-<img width="1408" height="768" alt="Gemini_Generated_Image_hte66dhte66dhte6 (1)" src="https://github.com/user-attachments/assets/56924bbf-0587-46ad-898f-9b31a065cc45" />
+<img width="1408" height="768" alt="Gemini_Generated_Image_696d1l696d1l696d" src="https://github.com/user-attachments/assets/930042da-5ea3-4f36-aaed-261562bae416" />
+
 
