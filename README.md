@@ -25,6 +25,26 @@ An automated lead-processing pipeline that collects inbound leads through Google
 }
 ```
 
+# Results/Outcomes
+Outcomes
+
+Automated lead qualification
+
+> 50 test leads processed through the complete workflow without manual qualification.
+
+Automated scoring
+
+> Each lead received a deterministic qualification score based on intent, urgency, company size and solution category.
+
+Automated routing
+
+> Leads were automatically classified into High, Medium and Low priority with a corresponding recommended action.
+
+Estimated manual effort avoided
+
+> ~2.5 hours per 50 leads, based on an assumed 3-minute manual qualification time per lead.
+
+
 # Architecture
 <img width="1408" height="768" alt="Gemini_Generated_Image_696d1l696d1l696d" src="https://github.com/user-attachments/assets/930042da-5ea3-4f36-aaed-261562bae416" />
 
