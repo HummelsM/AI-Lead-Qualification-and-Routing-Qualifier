@@ -46,6 +46,6 @@ Estimated manual effort avoided
 
 
 # Architecture
-<img width="1408" height="768" alt="Gemini_Generated_Image_696d1l696d1l696d" src="https://github.com/user-attachments/assets/930042da-5ea3-4f36-aaed-261562bae416" />
+<img width="1536" height="1024" alt="4bf38dfd-4fae-4c21-a12b-8210819735c0" src="https://github.com/user-attachments/assets/dd470441-b2b5-4c1e-962b-5c359943a154" />
 
 
